@@ -1,4 +1,4 @@
 streamlit
 plotly
 pandas
-votekit
+votekit==3.0.0
