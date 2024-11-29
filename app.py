@@ -68,7 +68,7 @@ with col1:
     
     primary_data = pd.DataFrame({
         'Party': ['GRN', 'LIB', 'IND', 'AJP'],
-        'Votes': [grn_primary, lib_primary, ajp_primary, ind_primary]
+        'Votes': [grn_primary, lib_primary, ind_primary, ajp_primary, ]
     })
     
     fig_primary = px.bar(
