@@ -8,8 +8,8 @@ def run_election(grn_primary, lib_primary, ajp_primary, pref_flows):
                 "LIB": lib_primary,
                 "AJP": ajp_primary,
                 }
-    print(primaries)
-    print(pref_flows)
+    # print(primaries)
+    # print(pref_flows)
 
     # primaries['GRN'] += alp_primary * alp_swing/100
     primaries['IND'] = 100 - sum(primaries.values())
