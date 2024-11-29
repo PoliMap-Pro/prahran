@@ -122,3 +122,5 @@ with col2:
     # Add a horizontal line at 50%
     fig_tpp.add_hline(y=50, line_dash="dash", line_color="red")
     st.plotly_chart(fig_tpp, use_container_width=True)
+
+st.html("<a href='https://poliq.au'><img src='https://poliq.au/wp-content/uploads/2024/03/poliq_wide_w.png' alt='Poliq' width='33%'></a>")
