@@ -92,14 +92,16 @@ result = run_election(grn_primary, lib_primary, ajp_primary, pref_flows)
         #    (ind_primary * ind_to_grn/100))
 # lib_tpp = 100 - grn_tpp
 grn_tpp = result['GRN']
-lib_tpp = result['LIB']
-
+other = "LIB"
+if "LIB" not in result:
+    other = "IND"
+lib_tpp = result[other]
 # Two-party preferred visualization
 with col2:
     # st.subheader("Two-Party Preferred")
     
     tpp_data = pd.DataFrame({
-        'Party': ['GRN', 'LIB'],
+        'Party': ['GRN', other],
         'Votes': [grn_tpp, lib_tpp]
     })
     
